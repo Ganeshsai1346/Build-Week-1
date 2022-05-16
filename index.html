@@ -7,9 +7,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body{
+        background-color: black;
+      }
+      #bgImage{
+        background-image: url(bg.jpg);
+        background-size: cover;
+        width: 60%;
+        height: fit-content;
+        text-align: center;
+        margin-left: 300px;
+        margin-top: -20px
+      }
+    #logo{
+      width: 150px;
+      margin-left: -600px;
+      margin-top: 48px;
+    }
+    #firstH1{
+      color: white;
+      font-family: outfit, sans-serif;
+      font-size: 40px;
+      font-weight: lighter;
+    }
+    #secondH1{
+      color: white;
+      font-family: outfit, sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .button{
+      width: 200px;
+      height: 40px;
+      border-radius: 30px;
+    }
+    footer{
+      color: white;
+    }
+    span{
+      color: #D20094;
+    }
+    </style>
   </head>
   <body>
- <h2>this is my change</h2>
- <h2>test</h2>
+    <div id="bgImage">
+    <div class="container_1">
+      <img id="logo" src="epicode_logo.png"/>
+    </div>
+    <div class="container_2">
+      <h1 id="firstH1">How can I create a<h1 id="secondH1">checkbox in HTML?</h1></h1>
+    </div>
+    <div class="container_3">
+      <button class="button">123</button>
+      <button class="button">123</button>
+      <button class="button">123</button>
+      <button class="button">123</button>
+    </div>
+    <div class="container_4">
+      <footer>QUESTION 1 <span>/ 10</span></footer>
+    </div>
+  </div>
  </body>
 </html>
