@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Document</title>
     <style>
       body{
@@ -31,6 +32,7 @@
       font-family: outfit, sans-serif;
       font-size: 40px;
       font-weight: lighter;
+      line-height: 2px;
     }
     #secondH1{
       color: white;
@@ -40,7 +42,6 @@
     }
     .container_1{
       margin-inline: 10px;
-
     }
     .button{
       width: 320px;
@@ -56,7 +57,7 @@
       box-shadow: 1px 1px 0.1px white;
       border: blueviolet;
     }
-    #timer{
+    /*#timer{
       border-radius: 50%;
       border: 10px solid #00fff0;
       width: 110px;
@@ -69,7 +70,8 @@
     }
     #time{
       font-size: 40px;
-    }
+      <button id="timer">SECONDS <span id="time">16</span> REMAINING</button>
+    }*/
     footer{
       color: #fff;
       font-family: outfit, sans-serif;
@@ -85,13 +87,26 @@
       padding-top: 120px;
       margin-bottom: 0%;
     }
+    .center {
+     top:50%;
+     left:50%;
+     position: absolute;
+     transform: translate(-50%, -50%);
+}
+  
+    
     </style>
   </head>
   <body>
     <div id="bgImage">
     <div class="container_1">
       <img id="logo" src="epicode_logo.png"/>
-      <button id="timer">SECONDS <span id="time">16</span> REMAINING</button>
+      <div style="height:100px; max-width:200px; position:relative">
+        <canvas style="position:absolute;" id="myChart"></canvas>
+        <span class="center">60 seconds</span>
+      </div>
+     
+      
     </div>
     <div class="container_2">
       <h1 id="firstH1">How can I create a<h1 id="secondH1">checkbox in HTML?</h1></h1>
@@ -106,5 +121,58 @@
       <footer>QUESTION 1 <span>/ 10</span></footer>
     </div>
   </div>
+  <script>
+    /*let data = {
+      dataset: [{
+        data: [40, 60],
+        backgroundColor: ['grey', '#00fff0']
+      }]
+    }
+
+    let config = {
+      type: 'doughnut',
+      data: data,
+    };*/
+    var data = {
+
+  datasets: [
+    {
+      data: [40,60],
+      backgroundColor: [
+        "grey",
+        "#00fff0"
+      ]
+    }]
+};
+var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
+  type: 'doughnut',
+  data: data,
+  options: {
+     responsive: true,
+     cutoutPercentage: 80,
+    rotation: 120,
+    legend: {
+      display: false
+    }
+  }
+});
+/*Chart.pluginService.register({
+  beforeDraw: function(chart) {
+    var width = chart.chart.width,
+        height = chart.chart.height,
+        ctx = chart.chart.ctx;
+    ctx.restore();
+    var fontSize = (height / 250).toFixed(2);
+    ctx.font = fontSize + "em sans-serif";
+    ctx.textBaseline = "middle";
+    var text = "SECONDS 16 REMAINING",
+        textX = Math.round((width - ctx.measureText(text).width) / 2),
+        textY = height / 2;
+    ctx.fillText(text, textX, textY);
+    ctx.save();
+  }
+});*/
+
+    </script>
  </body>
 </html>
