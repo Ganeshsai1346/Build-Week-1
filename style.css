@@ -1,0 +1,74 @@
+/** @format */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 80%;
+  height: 100%;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#logo {
+  padding-left: 100px;
+  padding-top: 50px;
+}
+#heading {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+#description {
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#stars {
+  text-align: center;
+  margin-top: 40px;
+}
+.star {
+  padding: 0 10px;
+}
+#feedbackArea {
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  margin-top: 80px;
+}
+#comment {
+  margin-top: 40px;
+  margin-left: 210px;
+}
+#comment input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 25px;
+}
+hr {
+  margin-top: 10px;
+  margin-left: -20px;
+  margin-right: 200px;
+}
+#button {
+  padding-top: 60px;
+  text-align: center;
+}
+.btn {
+  background-color: #00ffff;
+  border: none;
+  font-size: 30px;
+  padding: 10px 40px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00ffff;
+  user-select: none;
+}
