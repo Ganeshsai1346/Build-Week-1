@@ -58,9 +58,10 @@ hr {
   margin-top: 10px;
   margin-left: -20px;
   margin-right: 200px;
+  border: 1px solid #d20094;
 }
 #button {
-  padding-top: 60px;
+  margin-top: 40px;
   text-align: center;
 }
 .btn {
