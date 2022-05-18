@@ -29,7 +29,7 @@ body {
 
 .chart-container {
   position: relative;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .inner-chart {
@@ -52,7 +52,7 @@ button {
   padding: 1.1rem;
   margin-top: 40px;
   margin-left: 10%;
-  width: 250px;
+  width: 200px;
 }
 
 .center {
@@ -65,21 +65,21 @@ button {
 
 h1 {
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
   font-weight: normal;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 h3 {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h4 {
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h1, h2, h3, h4 {
