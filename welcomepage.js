@@ -1,13 +1,11 @@
 /** @format */
 
+const checkBoxEnable = document.getElementById("checkBox");
+const buttonProceed = document.getElementById("btn");
 function enable() {
-  let checkBoxEnable = document.getElementById("checkBox");
-  let buttonProceed = document.getElementById("btn");
   if (checkBoxEnable.checked) {
     buttonProceed.removeAttribute("disabled");
   } else {
     buttonProceed.disabled = "true";
   }
 }
-
-enable();
