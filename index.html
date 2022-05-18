@@ -6,6 +6,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Document</title>
     <style>
+<<<<<<< Updated upstream
         body{
             background-image: url(bg.jpg);
             background-size: cover;
@@ -143,3 +144,128 @@
 
     </body>
     </html>
+=======
+      body {
+        background-color: black;
+      }
+      #bgImage {
+        background-image: url(bg.jpg);
+        background-size: cover;
+        width: 60%;
+        height: fit-content;
+        text-align: center;
+        margin-left: 300px;
+        margin-top: -20px;
+      }
+      #logo {
+        width: 150px;
+        margin-right: 600px;
+        margin-top: 48px;
+      }
+      #firstH1 {
+        color: white;
+        font-family: outfit, sans-serif;
+        font-size: 40px;
+        font-weight: lighter;
+        line-height: 2px;
+      }
+      #secondH1 {
+        color: white;
+        font-family: outfit, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .container_1 {
+        margin-inline: 10px;
+      }
+      .button {
+        width: 320px;
+        height: 65px;
+        border-radius: 30px;
+        margin-right: 45px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        background-color: inherit;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        box-shadow: 1px 1px 0.1px white;
+        border: blueviolet;
+      }
+
+      footer {
+        color: #fff;
+        font-family: outfit, sans-serif;
+        font-size: 20px;
+        margin-top: -10px;
+      }
+      span {
+        color: #d20094;
+      }
+      .container_4 {
+        height: 80px;
+        text-align: center;
+        padding-top: 120px;
+        margin-bottom: 0%;
+      }
+      .center {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bgImage">
+      <div class="container_1">
+        <img id="logo" src="epicode_logo.png" />
+        <div style="height: 100px; max-width: 200px; position: relative">
+          <canvas style="position: absolute" id="myChart"></canvas>
+          <span class="center">SECONDS<span id="time">16</span>REMAINING</span>
+        </div>
+      </div>
+      <div class="container_2">
+        <h1 id="firstH1">
+          How can I create a
+          <h1 id="secondH1">checkbox in HTML?</h1>
+        </h1>
+      </div>
+      <div class="container_3">
+        <input type="button" class="button" value="<input type = 'check'>" />
+        <input type="button" class="button" value="<input type = 'checkbox'>" />
+        <input type="button" class="button" value="<checkbox>" />
+        <input type="button" class="button" value="<input type = 'button'>" />
+      </div>
+      <div class="container_4">
+        <footer>QUESTION 1 <span>/ 10</span></footer>
+      </div>
+    </div>
+    <script>
+      var data = {
+        datasets: [
+          {
+            data: [40, 60],
+            backgroundColor: ["grey", "#00fff0"],
+          },
+        ],
+      };
+      var promisedDeliveryChart = new Chart(
+        document.getElementById("myChart"),
+        {
+          type: "doughnut",
+          data: data,
+          options: {
+            responsive: true,
+            cutoutPercentage: 80,
+            rotation: 120,
+            legend: {
+              display: false,
+            },
+          },
+        }
+      );
+    </script>
+  </body>
+</html>
+>>>>>>> Stashed changes
