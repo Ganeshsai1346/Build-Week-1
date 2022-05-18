@@ -63,8 +63,6 @@ label {
   width: 1.3em;
   height: 1.3em;
   vertical-align: middle;
-  appearance: none;
-  -webkit-appearance: none;
   border: 3px solid #ddd;
 }
 .btn {
