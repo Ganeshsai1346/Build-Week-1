@@ -59,13 +59,13 @@ label {
   margin-left: 10px;
   font-weight: 900;
 }
-.checkBox {
+#checkBox {
   width: 1.3em;
   height: 1.3em;
   vertical-align: middle;
   border: 3px solid #ddd;
 }
-.btn {
+#btn {
   margin-left: 350px;
   background: #00ffff;
   font-family: "Inter", sans-serif;
