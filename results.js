@@ -12,7 +12,6 @@ var promisedDeliveryChart = new Chart(
     type: "doughnut",
     data: data,
     options: {
-      // responsive: true,
       cutoutPercentage: 70,
       rotation: 120,
 

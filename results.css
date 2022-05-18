@@ -26,16 +26,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding-bottom: 160px; */
 }
 
 .chart-container {
   position: relative;
   margin-top: 10%;
 }
-/* #myChart {
-  position: absolute;
-} */
+
 .inner-chart {
   position: absolute;
   font-size: 0.5rem;
