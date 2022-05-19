@@ -32,17 +32,24 @@ body {
 }
 #stars {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .star {
   padding: 0 10px;
+}
+.blackStar {
+  padding: 0 10px;
+  opacity: 0.1;
+}
+.starColorChange {
+  opacity: 1;
 }
 #feedbackArea {
   color: white;
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 30px;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 #comment {
   margin-top: 40px;
@@ -53,6 +60,8 @@ body {
   outline: none;
   background: none;
   font-size: 25px;
+  color: white;
+  user-select: none;
 }
 hr {
   margin-top: 10px;
@@ -64,7 +73,7 @@ hr {
   margin-top: 40px;
   text-align: center;
 }
-.btn {
+#btn {
   background-color: #00ffff;
   border: none;
   font-size: 30px;
