@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script src="./questions.js"></script>
+    
     <title>Document</title>
     <style>
       body {
@@ -40,12 +40,12 @@
         height: 100px;
         padding-top: 5px;
       }
-      #uestions {
+      .style {
         color: white;
         font-family: outfit, sans-serif;
         font-size: 45px;
         font-weight: lighter;
-        line-height: 2px;
+        line-height: 60px;
       }
       #secondH1 {
         color: white;
@@ -140,7 +140,7 @@
       </div>
     </div>
     <div class="container_2">
-      <h1 id="question">
+      <h1 id="question" class="style">
         QUESTION
       </h1>
     </div>
@@ -156,31 +156,7 @@
     <div class="container_4">
       <footer>QUESTION 1 <span>/ 10</span></footer>
     </div>
-    <script>
-      var data = {
-        datasets: [
-          {
-            data: [40, 60],
-            backgroundColor: ["grey", "#00fff0"],
-          },
-        ],
-      };
-      var promisedDeliveryChart = new Chart(
-        document.getElementById("myChart"),
-        {
-          type: "doughnut",
-          data: data,
-          options: {
-            responsive: true,
-            cutoutPercentage: 75,
-            borderWidth: 0,
-            //rotation: 120,
-            legend: {
-              display: false,
-            },
-          },
-        }
-      );
-    </script>
+    <script src="./questions.js"></script>
+      
   </body>
 </html>

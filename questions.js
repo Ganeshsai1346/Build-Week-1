@@ -1,4 +1,28 @@
-let myQuestions = [
+var data = {
+    datasets: [
+      {
+        data: [40, 60],
+        backgroundColor: ["grey", "#00fff0"],
+      },
+    ],
+  };
+  var promisedDeliveryChart = new Chart(
+    document.getElementById("myChart"),
+    {
+      type: "doughnut",
+      data: data,
+      options: {
+        responsive: true,
+        cutoutPercentage: 75,
+        borderWidth: 0,
+        //rotation: 120,
+        legend: {
+          display: false,
+        },
+      },
+    }
+  );
+  let myQuestions = [
     {
         question: 'How can I create a checkbox in HTML?',
         answers:{
@@ -41,7 +65,7 @@ function loadQuiz(){
   let questionEl = document.getElementById("question")
   const currentQuizData = myQuestions[currentQuiz].question
 
-  questionEl.innerText = "ABCD"
+  questionEl.innerText = currentQuizData
  
 }
 
