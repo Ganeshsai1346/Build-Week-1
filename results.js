@@ -1,11 +1,14 @@
-// let questions = 0;
-// let correctAn = 0;
-// let wrongAns = 33.3;
+let total = 10;
+let correct = 7;
+let wrong = 3;
+
+let correctPercentage = (correct / total) * 100;
+let wrongPercentage = 100 - correctPercentage;
 
 let data = {
   datasets: [
     {
-      data: [correctAn, wrongAns],
+      data: [correctPercentage, wrongPercentage],
       backgroundColor: ["#00FFFF", "#D20094"],
     },
   ],
