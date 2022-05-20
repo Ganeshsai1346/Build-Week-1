@@ -34,27 +34,35 @@
         <p>to a friend or a colleague</p>
       </div>
       <div id="stars">
-        <img class="star" src="/star.svg" />
-        <img class="star" src="/star.svg" />
-        <img class="star" src="/star.svg" />
-        <img class="star" src="/star.svg" />
-        <img class="star" src="/star.svg" />
-        <img class="star" src="/star.svg" />
-        <img class="star" src="/star.svg" />
-        <img class="star" src="/star.svg" />
-        <img class="star" src="/star.svg" />
-        <img class="star" src="/star.svg" />
+        <img class="star" src="/star.svg" width="70" height="70" />
+        <img class="star" src="/star.svg" width="70" height="70" />
+        <img class="star" src="/star.svg" width="70" height="70" />
+        <img class="star" src="/star.svg" width="70" height="70" />
+        <img class="star" src="/star.svg" width="70" height="70" />
+        <img class="star" src="/star.svg" width="70" height="70" />
+        <img class="blackStar" src="/star.svg" width="70" height="70" />
+        <img class="blackStar" src="/star.svg" width="70" height="70" />
+        <img class="blackStar" src="/star.svg" width="70" height="70" />
+        <img class="blackStar" src="/star.svg" width="70" height="70" />
       </div>
       <div id="feedbackArea">
         <p>Leave us an open feedback about your experience so far</p>
       </div>
       <div id="comment">
-        <input type="text" placeholder="Write your comment here" />
+        <input
+          type="text"
+          id="writeComment"
+          placeholder="Write your comment here"
+          onkeyup="enableButton()"
+        />
         <hr />
       </div>
       <div id="button">
-        <button class="btn"><b>MORE INFO</b></button>
+        <a id="link" target="_blank"
+          ><button disabled="true" id="btn"><b>MORE INFO</b></button></a
+        >
       </div>
     </div>
+    <script src="./feedbackpage.js"></script>
   </body>
 </html>
