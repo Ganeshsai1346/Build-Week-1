@@ -6,11 +6,10 @@ function enableButton() {
   let linkActive = document.getElementById("link");
   if (textEnable !== "") {
     buttonMoreInfo.removeAttribute("disabled");
-    linkActive.removeAttribute("disabled");
     linkActive.href = "https://epicode.com/en/?utm_source=strive.school";
   } else {
     buttonMoreInfo.disabled = "true";
-    linkActive.disabled = "true";
+    linkActive.href = "";
   }
 }
 
