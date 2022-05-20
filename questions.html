@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
     <title>Document</title>
     <style>
       body {
@@ -39,12 +40,12 @@
         height: 100px;
         padding-top: 5px;
       }
-      #firstH1 {
+      .style {
         color: white;
         font-family: outfit, sans-serif;
         font-size: 45px;
         font-weight: lighter;
-        line-height: 2px;
+        line-height: 60px;
       }
       #secondH1 {
         color: white;
@@ -56,6 +57,7 @@
         padding-top: -10px;
         margin-left: 25%;
         margin-bottom: 60px;
+        margin-top: -90px;
         width: 700px;
         text-align: center;
       }
@@ -77,6 +79,10 @@
         font-family: inter, sans-serif;
         box-shadow: -4.5px -2px 5.5px white;
         border: blueviolet;
+        cursor: pointer;
+      }
+      .button:focus{
+        background-color: #900080;
       }
       footer {
         color: #fff;
@@ -86,12 +92,36 @@
       span {
         color: #d20094;
       }
+      .container{
+        margin-left: 1100px;
+        margin-top: 20px;
+      }
+      #nextButton{
+        width: 150px;
+        height: 50px;
+        border-radius: 35px;
+        margin-right: 45px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: inter, sans-serif;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      #nextButton:focus{
+        background-color: #00ffff;
+      }
       .container_4 {
         text-align: center;
         padding-top: 70px;
         margin-bottom: 0%;
+        margin-top: -20px;
       }
-      #selected {
+      .selected {
         background-color: #900080;
       }
     </style>
@@ -110,50 +140,23 @@
       </div>
     </div>
     <div class="container_2">
-      <h1 id="firstH1">
-        How can I create a
-        <h1 id="secondH1">checkbox in HTML?</h1>
+      <h1 id="question" class="style">
+        QUESTION
       </h1>
     </div>
     <div class="container_3">
-      <input type="button" class="button" value="<input type = 'check'>" />
-      <input
-        type="button"
-        id="selected"
-        class="button"
-        value="<input type = 'checkbox'>"
-      />
-      <input type="button" class="button" value="<checkbox>" />
-      <input type="button" class="button" value="<input type = 'button'>" />
+      <input type="button" id="optionA" class="button" value="<input type = 'check'>" />
+      <input type="button" id="optionB" class="button" value="<input type = 'checkbox'>"/>
+      <input type="button" id="optionC" class="button" value="<checkbox>" />
+      <input type="button" id="optionD" class="button" value="<input type = 'button'>" />
+    </div>
+    <div class="container">
+      <button id="nextButton">Next</button>
     </div>
     <div class="container_4">
       <footer>QUESTION 1 <span>/ 10</span></footer>
     </div>
-    <script>
-      var data = {
-        datasets: [
-          {
-            data: [40, 60],
-            backgroundColor: ["grey", "#00fff0"],
-          },
-        ],
-      };
-      var promisedDeliveryChart = new Chart(
-        document.getElementById("myChart"),
-        {
-          type: "doughnut",
-          data: data,
-          options: {
-            responsive: true,
-            cutoutPercentage: 75,
-            borderWidth: 0,
-            //rotation: 120,
-            legend: {
-              display: false,
-            },
-          },
-        }
-      );
-    </script>
+    <script src="./questions.js"></script>
+      
   </body>
 </html>
